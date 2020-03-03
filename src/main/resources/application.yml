@@ -1,0 +1,12 @@
+### Default Setting
+server:
+  port: 8888
+
+spring:
+  profiles:
+    active: local
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+    show-sql: true
