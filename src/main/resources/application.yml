@@ -5,8 +5,13 @@ server:
 spring:
   profiles:
     active: local
+
   jpa:
     hibernate:
       ddl-auto: none
     open-in-view: false
     show-sql: true
+
+  batch:
+    job:
+      names: ${job.name:NONE}
